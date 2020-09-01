@@ -1,5 +1,14 @@
 # EPA Vue Client
 
+### Access the environment
+<p>Load the python environment</p>
+<p>For windows us the .bat extension otherwise you can omit</p>
+```
+server/env/Scripts> activate.bat
+```
+<p>This will load your python environment and denote your bash with (env) server/env/Scripts</p>
+<p>It is important to note that you must run the API Server and Client within the specified python environment</p>
+
 ### How to run
 <p>The client will load at http://127.0.0.1:8080</p>
 
