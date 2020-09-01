@@ -1,29 +1,43 @@
-# client
+# EPA Vue Client
 
-## Project setup
-```
-npm install
-```
+### How to run
+<p>The client will load at http://127.0.0.1:8080</p>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<p>The client consists of 4 views that implement components to do the heavy lifting.</p>
+<p>The client makes calls to the api located in the server using named parameters in the url.</p>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<ol>
+  <li>Area - Calcuates the area of a triangle using the formula: 1.5 (base * height)</li>
+  <li>Hypotenuse - Calculates the longest edge of a triangle using the pathagorean theorem</li>
+  <li>Seconds - Calculates the seconds with multiple calls of a function that multiples a value by 60</li>
+  <li>Recursion - Recursively calls itself based on the iteration count specified.</li>
+</ol>
 
-### Run your tests
 ```
-npm run test
+client> npm run serve
 ```
 
-### Lints and fixes files
+### Start the flask api server
+<p>The server is stored in a separate github repo to allow for parallel development between client and server</p>
+<p>Pull the api from here: https://github.com/rwcatalano/epa-flask-api</p>
+<p>API server will run at http://127.0.0.1:5000</p>
 ```
-npm run lint
+server> python app.py
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Running tests
+<p>Tests have been created for logic within the api.</p>
+<p>Executing the command below will run the following tests:</p>
+<ol>
+  <li>test_triangle_area():</li>
+  <li>test_triangle_area_float():</li>
+  <li>test_triangle_area_negative():</li>
+  <li>test_triangle_hypotenuse():</li>
+  <li>test_triangle_hypotenuse_float():</li>
+  <li>test_triangle_hypotenuse_negative():</li>
+  <li>test_time_seconds():</li>
+  <li>test_time_seconds_nagative():</li>
+  <li>test_recursive_string():</li>
+</ol>
+```
+server> pytest
+```
