@@ -1,8 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10">
+          <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/area">Area</router-link> |
+            <router-link to="/hypotenuse">Hypotenuse</router-link> |
+            <router-link to="/seconds">Seconds</router-link> |
+            <router-link to="/recursion">Recursion</router-link>
+          </div>
+        </div>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -10,11 +19,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  margin-top:60px
 }
 
 #nav {
