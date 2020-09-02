@@ -24,7 +24,7 @@ First install the node packages
 
 <ol>
   <li>Area - Calcuates the area of a triangle using the formula: 1.5 (base * height)</li>
-  <li>Hypotenuse - Calculates the longest edge of a triangle using the pathagorean theorem</li>
+  <li>Hypotenuse - Calculates the longest edge of a triangle using the Pythagorean Theorem</li>
   <li>Seconds - Calculates the seconds with multiple calls of a function that multiples a value by 60</li>
   <li>Recursion - Recursively calls itself based on the iteration count specified.</li>
 </ol>
