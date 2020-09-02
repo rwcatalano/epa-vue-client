@@ -10,6 +10,9 @@ server/env/Scripts> activate.bat
 <p>It is important to note that you must run the API Server and Client within the specified python environment</p>
 
 ### How to run
+First install the node packages
+<p>client> npm install</p>
+
 <p>The client will load at http://127.0.0.1:8080</p>
 
 <p>The client consists of 4 views that implement components to do the heavy lifting.</p>
