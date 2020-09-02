@@ -1,17 +1,21 @@
 # EPA Vue Client
 
+### Install Node Modules
+epa-vue-client> npm install
+
+
 ### Access the environment
 <p>Load the python environment</p>
 <p>For windows us the .bat extension otherwise you can omit</p>
-```
-server/env/Scripts> activate.bat
-```
+
+epa-flask-api/env/Scripts> activate.bat
+
 <p>This will load your python environment and denote your bash with (env) server/env/Scripts</p>
 <p>It is important to note that you must run the API Server and Client within the specified python environment</p>
 
 ### How to run
 First install the node packages
-<p>client> npm install</p>
+<p>epa-vue-client> npm install</p>
 
 <p>The client will load at http://127.0.0.1:8080</p>
 
@@ -25,17 +29,18 @@ First install the node packages
   <li>Recursion - Recursively calls itself based on the iteration count specified.</li>
 </ol>
 
-```
-client> npm run serve
-```
+
+epa-vue-client> npm run serve
+
 
 ### Start the flask api server
 <p>The server is stored in a separate github repo to allow for parallel development between client and server</p>
 <p>Pull the api from here: https://github.com/rwcatalano/epa-flask-api</p>
 <p>API server will run at http://127.0.0.1:5000</p>
-```
-server> python app.py
-```
+
+epa-flask-api> python app.py
+
+
 ### Running tests
 <p>Tests have been created for logic within the api.</p>
 <p>Executing the command below will run the following tests:</p>
@@ -50,6 +55,6 @@ server> python app.py
   <li>test_time_seconds_nagative():</li>
   <li>test_recursive_string():</li>
 </ol>
-```
-server> pytest
-```
+
+epa-flask-api> pytest
+
